@@ -1,4 +1,4 @@
-[Try DEMO](http://www.bvx.cz/poulicek/dreamsplan/)
+[Try DEMO](https://bitit.cz/dl/dreamsplan.html)
 
 # Dreamsplan
 _Web task manager in a simplistic style of sticky notes with a timeline_
@@ -14,7 +14,7 @@ _Web task manager in a simplistic style of sticky notes with a timeline_
 - tasks displayed as bullet lists on sticky notes
 - setting of start dates and deadlines
 - visualization on timeline allowing shifting the tasks in time
-- tags support
+- support of tags
 
 ## Installation
 - just copy the files into the designated www folder of the web server
