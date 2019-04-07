@@ -1,0 +1,11 @@
+.calendar {position: absolute; z-index: 999; float: left; padding: 8px; background: white; border: 1px solid black;}
+.calendar table {width: 100%; border-spacing: 0px; border-collapse: collapse;}
+.calendar table th {width: 24px; height: 24px; line-height: 24px; text-align: center; padding: 0px;}
+.calendar table td {text-align: right; padding: 0px;}
+.calendar table td a {width: 24px; height: 24px; line-height: 24px; display: block; color: inherit;  padding: 2px; border: 1px solid transparent;}
+.calendar button {background: transparent; border: none; cursor: pointer; line-height: inherit; padding: 0px; margin: 0px; width: 24px; height: 24px; line-height: 24px;}
+.calendar .backward {float: left;}
+.calendar .forward {float: right;}
+.calendar .today a {border-color: red;}
+.calendar .otherMonth {color: #c0c0c0;}
+.calendar .selected {background: pink;}

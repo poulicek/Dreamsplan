@@ -1,0 +1,251 @@
+/* globalni nastaveni */
+body {font-size: small; min-width: 750px; font-family: Segoe UI; margin: 0px; padding: 20px; padding-top: 5px; background: #506E84; color: white;}
+a {text-decoration: none;}
+h1 {text-align: center; font-size: 125%; font-weight: normal; margin: 0px; margin: 0px; padding: 5px; padding-bottom: 0px;}
+ins {text-decoration: none;}
+img {border: none;}
+
+body.working {cursor: wait !important;}
+body.working * {cursor: wait !important;}
+
+#menu {height: 48px; line-height: 48px;}
+#menu a {float: left; height: 32px; line-height: 32px; padding-left: 16px; padding-right: 16px; margin: 2px; margin-top: 8px; color: white; font-weight: bold; border: 1px solid transparent;}
+#menu a:active, .active {color: black !important; line-height: 34px !important; background: #d9d9d9; border-bottom: 1px solid #e0e0e0 !important; border-right: 1px solid #e0e0e0 !important; border-left: 1px solid #b0b0b0 !important; border-top: 1px solid #b0b0b0 !important; border-radius: 4px;}
+#menu h2 {float: left; margin: 0px; font-family: courier new; font-size: 150%;}
+#menu h2 img {float: left; margin-top: 16px;}
+#menu h2 strong {font-size: 120%; margin-right: 1px;}
+#menu h2 sup {position: absolute; margin-top: -5px; font-style: normal; color: white;}
+
+#paginator {float: right;}
+#paginator a {float: left;}
+#paginator img {margin-top: 11px;}
+#paginator .navigation {font-family: wingdings;}
+#paginator #datename {width: 112px; text-align: center;}
+
+#contents {clear: both; margin-top: 8px;}
+#contents table {border-collapse: collapse; border-spacing: 0px; padding: 0px; width: 100%;}
+#contents table td {vertical-align: top; padding: 0px;}
+#contents .message {text-align: center; padding: 20px; margin-top: 10px; margin-bottom: 10px;}
+#contents .longMessage {margin: 0px auto; width: 60%; text-align: justify;}
+#contents .notsupported {text-align: center; font-weight: bold; font-size: 150%; margin-top: 180px;}
+
+.frame {box-shadow: #333333 0px 2px 8px; border-radius: 6px; padding: 4px; background: #f0f0f0; color: #555555; margin-bottom: 16px;}
+.frame a {color: #55555;}
+
+/*
+.cat0 {background: rgb(247,150,70);}
+.cat1 {background: rgb(79,129,189);}
+.cat2 {background: rgb(150,184,79);}
+.cat3 {background: rgb(149,98,81);}
+.cat4 {background: rgb(128,100,162);}
+.cat5 {background: rgb(198,72,71);}
+*/
+.cat0 {background-color: #DC8F29 !important;}
+.cat1 {background-color: #2B95A8 !important;}
+.cat2 {background-color: #729E3D !important;}
+.cat3 {background-color: #808080 !important;}
+.cat4 {background-color: #A05F36 !important;}
+.cat5 {background-color: #A57797 !important;}
+.catN {background-color: #f0f0f0 !important;}
+
+#tagBar {float: left; font-size: 11px; border-top-left-radius: 4px; border-top-right-radius: 4px; max-width: 100%; overflow: hidden;}
+#tagBar a {float: left; margin-right: 2px; padding-left: 12px; padding-right: 12px; line-height: 20px; height: 20px; color: inherit; border: 1px solid transparent; border-bottom: none;}
+#tagBar a:active, #tagBar .active {line-height: 22px !important; background: #d9d9d9; border-bottom: none !important; border-right: 1px solid #e0e0e0 !important; border-left: 1px solid #b0b0b0 !important; border-top: 1px solid #b0b0b0 !important; border-radius: 0px; border-top-left-radius: 4px; border-top-right-radius: 4px; }
+#tagBar .mainTags {float: left; border-right: 1px solid #e0e0e0; margin-right: 2px;}
+#tagBar .mainTags a {color: black;}
+
+#selecteddate {display: none;}
+#allShownValue {display: none;}
+#hotList {color: black;}
+#hotList h3 {color: black;}
+#hotList .taskList {background: #f0f0f0;}
+#hotList .metrics {color: #999999; margin-left: 5px; font-style: normal;}
+#hotList .taskTitle {color: black !important;}
+#hotList .status {color: black !important;}
+#hotList .task {margin-right: 0px;}
+#hotList .emptyHotList {padding-left: 8px; cursor: default;}
+#hotList .emptyHotList .taskTitle {color: #444444 !important;}
+
+#board {border: 1px solid #e0e0e0; padding: 5px; padding-top: 15px; padding-bottom: 0px; background: white; color: black; cursor: default;}
+
+.placeholder {float: left; margin-right: 13px; margin-left: 13px; margin-bottom: 20px;}
+.taskList {box-shadow: #888888 0px 3px 3px; white-space: nowrap; border-radius: 6px; border: 1px solid #888888;}
+.taskList h3 {color: black; font-size: small; padding-left: 8px; padding-right: 4px; height: 32px; line-height: 32px; margin: 0px; background: url('img/shade.png');}
+.taskList h3 a {padding-left: 4px; padding-right: 4px;}
+.taskList h3 span {max-width: 200px; overflow: hidden;}
+.taskList h3 .tool {float: right; color: #c0c0c0; cursor: pointer; width: 16px; line-height: 32px; text-align: center; font-weight: bold; opacity: 0.3;}
+.taskList h3 .tool img {margin-top: 8px;}
+.taskList h3 .tool:hover {color: black; opacity: 1;}
+.taskList h3 .tool .minimize {display: block; border-bottom: 2px solid #c0c0c0; margin: 4px; line-height: 16px;}
+.taskList h3 .tool:hover .minimize {border-color: black;}
+.taskList .taskTitle {float: left; padding-left: 4px; padding-right: 4px;}
+.taskList .editable {cursor: text;}
+.taskList .tag {float: left; color: #e0e0e0 !important; font-size: 9px; line-height: 14px; background: #555555; margin-left: -6px; margin-right: 10px; margin-top: 2px; padding-left: 3px; padding-right: 3px; text-decoration: none !important; font-family: Segoe UI; border-radius: 2px; box-shadow: #777777 0px 0px 4px;}
+
+.emptyList {float: left; width: 32px; height: 32px; line-height: 24px; margin-right: 10px; margin-left: 10px; margin-bottom: 20px; border: 1px dashed #c0c0c0 !important;  font-weight: bold; color: #c0c0c0; text-align: center; font-size: 32px; box-shadow: none;}
+.emptyList:hover {border-color: #a0a0a0; color: #a0a0a0;}
+
+.taskListBody {min-width: 200px; word-break: break-all;} /* min-height: 240px; max-height: 420px; */
+.task {line-height: 28px; color: white; margin-right: 24px;}
+.task .taskTitle {font-family: Segoe UI; font-weight: 600; max-width: 420px; white-space: normal; margin-right: 8px;}
+.task .taskTitle a {text-decoration: underline; color: inherit;}
+.task .status {float: left; color: #d0d0d0; font-family: wingdings; margin: 0px; height: 28px; width: 28px; line-height: 28px; text-align: center; font-size: 150%;}
+.task .status img {margin-top: 10px;}
+.task .tagText {display: none;}
+.task .deadline {visibility: hidden;}
+.task:hover .deadline {visibility: visible;}
+.todoNow .deadline {visibility: visible;}
+.todoNow .emptyDeadline {visibility: hidden;}
+
+.taskDelete {display: none; background: url('img/ground.png'); padding: 7px; float: left; margin-left: -8px; margin-right: 8px; opacity: 0.5}
+.taskDelete:hover {opacity: 1;}
+
+.futureTask .taskTitle {opacity: 0.5;}
+.emptyTask {color: #e0e0e0;}
+.emptyTask .status {border: none; font-weight: bold; font-size: 140%; font-family: Segoe UI;}
+
+.editing {background: url('img/ground.png'); color: black; max-width: 412px; opacity: 1 !important; text-decoration: none !important;}
+.editing a {text-decoration: none !important;}
+.editing .tagText {display: inline;}
+
+.selectedTask {margin-right: 0px;}
+.selectedTask .tag {display: none;}
+.selectedTask .deadline {visibility: visible !important;}
+.selectedTask .taskDelete {display: block;}
+
+.deadline {display: block; width: 20px; height: 20px; margin-top: 4px; margin-left: -12px; line-height: 20px; background: #f0f0f0; position: absolute; border-radius: 10px;}
+.deadline:active, .dlActive {color: black !important; line-height: 22px !important; background: #d9d9d9}
+.deadline .value {position: absolute; width: 100%; text-align: center; color: #101010; font-size: 9px; z-index: 1; white-space: nowrap; overflow: hidden;}
+.deadline .hotness {background: #9E3C3C; width: 100%; height: 100%; border-radius: 10px;}
+.deadline .marker {font-family: wingdings; font-size: small; color: #555555;}
+.deadline img {margin-top: 4px;}
+
+.clear {clear: both;}
+.movable {cursor: move;}
+.moving {position: absolute; z-index: 999; box-shadow: #555 0px 4px 4px;}
+.noHotList .hotListHolder {display: none;}
+.moveTarget {cursor: move !important;}
+.moveTarget .taskList {opacity: 0.5;}
+.moveTarget .moving {opacity: 1;}
+.moveTarget * {cursor: move !important;}
+.accomplished .taskTitle {text-decoration: line-through; opacity: 0.7;}
+.accomplished .status {color: white;}
+.minimized {width: 32px; margin-right: 5px; margin-left: 5px; margin-bottom: 20px; height: 218px; cursor: pointer;}
+.minimized h3 {cursor: pointer; background: none;}
+.minimized h3 span {float: left; overflow: hidden;}
+.minimized .taskList {position: absolute; width: 218px; margin-left: -93px; margin-top: 93px; box-shadow: #888888 -5px 0px 5px;
+	transform: rotate(270deg);
+	-ms-transform:rotate(270deg); /* IE 9 */
+	-moz-transform:rotate(270deg); /* Firefox */
+	-webkit-transform:rotate(270deg); /* Safari and Chrome */
+	-o-transform:rotate(270deg); /* Opera */
+}
+
+.settings {color: #555555; line-height: 28px; padding: 8px;}
+.settings label {clear: both; float: left; width: 60px; margin-right: 5px;}
+.settings .button {clear: both; float: left; height: 32px; line-height: 32px; padding-left: 10px; padding-right: 10px; color: #555555; font-weight: bold; border: 1px solid transparent;}
+.settings .button:active {color: black !important; line-height: 34px !important; background: #d9d9d9; border-bottom: 1px solid #e0e0e0 !important; border-right: 1px solid #e0e0e0 !important; border-left: 1px solid #b0b0b0 !important; border-top: 1px solid #b0b0b0 !important; border-radius: 4px;}
+
+.colors {float: left; margin-bottom: 20px;}
+.colors a {float: left; width: 16px; height: 16px; margin-top: 6px; margin-right: 5px; border: 1px solid #e0e0e0;}
+.colors a:hover {border-color: black;}
+.colors a.selected {border-color: black;}
+
+#stateMenu {font-size: small; font-family: Segoe UI; background: #f0f0f0; border: 1px solid #e0e0e0; float: left; padding: 2px; box-shadow: #222222 1px 2px 3px; position: relative; z-index: 999; display: none; margin-left: -6px; margin-top: -2px;}
+#stateMenu a {float: left; min-width: 24px; height: 24px; line-height: 24px; color: #555555; border: 1px solid transparent; padding-left: 8px; padding-right: 8px; cursor: pointer;}
+#stateMenu a span {font-family: wingdings; font-size: 150%; float: left; margin-right: 4px;}
+#stateMenu img {margin-top: 0px; margin-left: 2px;}
+#stateMenu .active {line-height: 26px !important;}
+.stateMenuVisible {display: block !important; position: absolute !important;}
+
+.calendar {background: #f0f0f0; color: #555555; border: 1px solid #b0b0b0; border-radius: 4px;}
+.calendar table {border-spacing: 1px; border-collapse: separate;}
+.calendar .today a {font-weight: bold; border: none;}
+/*.calendar .today a {border-color: #FFA3B4; background: pink; border-radius: 4px;}*/
+.calendar button {color: #555555; line-height: 24px; width: 32px; border: 1px solid transparent;}
+.calendar button:active, .calendar a:active, .calendar .selected a {color: black !important; line-height: 26px !important; background: #e0e0e0; border-bottom: 1px solid #e0e0e0; border-right: 1px solid #e0e0e0; border-left: 1px solid #b0b0b0; border-top: 1px solid #b0b0b0; border-radius: 4px;}
+.calendar .selected {background: transparent;}
+
+#timeline table {background: white; table-layout: fixed; overflow: hidden; width: 100%;}
+#timeline th {font-weight: normal; background: #f0f0f0;}
+#timeline th a {padding: 2px; margin-bottom: 4px; color: #555555; display: block;}
+#timeline th.today {font-weight: bold;}
+#timeline tbody {border-top: 1px solid #f0f0f0;}
+#timeline td {height: 24px; text-align: center; line-height: 24px; border-left: 1px solid #f0f0f0;}
+#timeline td.weekend {background-color: #f9f9f9;}
+#timeline td.filled {border-left: none; border-right: none; border-bottom: 1px solid white; border-top: 1px solid white;}
+#timeline td .title {position: relative; z-index: 1;}
+#timeline td .title a {color: inherit; text-decoration: none !important;}
+#timeline td .title span {float: left; color: black !important; font-size: 12px; line-height: 16px; background: #f9f9f9; margin-left: 4px; margin-top: 4px; padding-left: 3px; padding-right: 3px; white-space: nowrap; opacity: 0.7; border-radius: 2px;}
+#timeline td .title .tagText {display: none;}
+#timeline td.filled .dragger {cursor: move;}
+#timeline td.finished {opacity: 0.7;}
+#timeline td.ended .title span {text-decoration: line-through;}
+#timeline .weekHeadings th {text-align: left; color: black; border-right: 1px solid #c0c0c0; padding-left: 4px;}
+#timeline .dayHeadings th {font-size: 11px;}
+#timeline .endofweek {border-right: 1px solid #c0c0c0;}
+#timeline .dragger {width: 100%; height: 100%; position: relative; z-index: 2; cursor: pointer; background: url('img/transparent.png');}
+#timeline .draggingicon {width: 22px; height: 24px;}
+#timeline .draggerSmall {width: 22px;}
+#timeline .btnDeadline {border-left: none;}
+#timeline .btnDeadline .dragger {float: left;}
+#timeline .btnDeadline .draggingicon {float: left; background: left center url('img/deadline.png') no-repeat; position: absolute;}
+#timeline .weekend .deadlineicon {background-image:  url('img/deadlineDark.png');}
+#timeline .btnStartline {border-right: none;}
+#timeline .btnStartline .dragger {float: right;}
+#timeline .btnStartline .draggingicon {float: right; background: right url('img/startline.png') no-repeat;}
+#timeline .weekend .startlineicon {background-image:  url('img/startlineDark.png');}
+
+.taskMoving tbody tr {opacity: 0.2;}
+.taskMoving tbody tr.activeTask {opacity: 1;}
+
+#credits {text-align: right; font-size: 85%; margin-top: 10px;}
+#credits a {color: inherit; font-weight: bold;}
+#credits a:hover {text-decoration: underline;}
+
+.fader {background: #f0f0f0; position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; opacity: 0.5; z-index: 2}
+.window {position: absolute; background: #506E84; z-index: 2; top: 0px; left: 0px; width: 60%; height: 60%; margin-left: 20%; margin-top: 96px; text-align: center; border: 1px solid #333333; padding: 6px; border-radius: 6px; box-shadow: #333333 0px 0px 8px;}
+.window table {width: 100%; height: 100%; border-collapse: collapse;}
+.window .button {float: left; height: 32px; line-height: 32px; color: #555555; border-radius: 6px; text-transform: uppercase; font-size: 75%;}
+.window .button:active, .windowContent .button.active {color: black !important; line-height: 34px !important; background: #d9d9d9; border-bottom: 1px solid #e0e0e0 !important; border-right: 1px solid #e0e0e0 !important; border-left: 1px solid #b0b0b0 !important; border-top: 1px solid #b0b0b0 !important;}
+.windowContent {background: white;  border-radius: 4px; border: 1px solid white; color: black;}
+.windowContent .button:first-line {text-transform: none; color: #555555; font-weight: bold; font-size: small;}
+.windowContent h2 {font-size: 200%; margin-bottom: 8px;}
+.windowContent h3 {font-weight: normal; font-size: 130%; margin-top: 0px; margin-bottom: 80px;}
+.windowContent p {text-transform: uppercase; width: 60%; margin: 0px auto;}
+.windowContent p a {color: black; text-decoration: underline;}
+.windowContent input {line-height: 32px; height: 32px; width: 90%; margin: 5%; font-size: large;}
+.windowContent input {border-radius: 4px; border-bottom: 1px solid #e0e0e0 !important; border-right: 1px solid #e0e0e0 !important; border-left: 1px solid #b0b0b0 !important; border-top: 1px solid #b0b0b0 !important;}
+.windowContent .button {width: 200px; margin-left: 30px; margin-right: 30px; background: #f0f0f0; border-bottom: 1px solid #b0b0b0 !important; border-right: 1px solid #b0b0b0 !important; border-left: 1px solid #e0e0e0 !important; border-top: 1px solid #e0e0e0 !important;}
+.windowFooter {vertical-align: top; height: 64px; border-top: 1px solid #e0e0e0;}
+.windowFooter .button {width: 12%; margin-top: 16px !important; margin-left: 44%; padding: 0px; color: white; font-size: small; font-weight: bold; text-transform: none;}
+
+
+#userSettings hr {background: #b0b0b0; height: 1px; width: 80%; margin: 0px auto; border: 0px; margin-top: 24px;}
+#userSettings .window {width: 40%; min-width: 500px; height: auto; margin-left: 30%;}
+#userSettings .windowContent {vertical-align: top; padding-bottom: 24px;}
+#userSettings .windowContent .button {float: none; display: block; width: auto; height: 48px; line-height: 24px; margin-top: 24px; overflow: hidden;}
+#userSettings .windowContent .button {text-transform: uppercase; font-weight: normal; font-size: x-small;}
+#userSettings .windowContent .button:active, #support .windowContent .button.active {padding-top: 1px; height: 47px; line-height: 24px !important;}
+#userSettings .windowFooter .button {width: 18%; margin-left: 41%;}
+
+#recoverAccount .window, #assignEmail .window {width: 20%; height: auto; margin-left: 40%;}
+#recoverAccount .windowFooter .button, #assignEmail .windowFooter .button {width: 40%; margin-left: 30%;}
+
+#paypal {display: none;}
+
+/*
+#support .window {width: 40%; height: auto; margin-left: 30%;}
+#support .windowContent {vertical-align: top; padding-bottom: 24px;}
+#support .windowContent .button {float: none; display: block; width: auto; height: 48px; line-height: 24px; margin-top: 24px; overflow: hidden;}
+#support .windowContent .button {text-transform: uppercase; font-weight: normal; font-size: x-small;}
+#support .windowContent .button:active, #support .windowContent .button.active {padding-top: 1px; height: 47px; line-height: 24px !important;}
+#support .windowFooter .button {width: 18%; margin-left: 41%;}
+
+
+.userSettings {width: auto !important; max-width: 600px; margin: 0px auto; margin-top: 60px; margin-bottom: 60px; padding: 15px !important; padding-bottom: 0px !important;}
+.userSettings .button {display: block; text-align: center; height: 48px; line-height: 24px; margin: auto; margin-bottom: 15px; background: #f0f0f0; overflow: hidden; color: #555555; text-shadow: #f0f0f0 1px 1px 1px; text-transform: uppercase; font-size: 75%;}
+.userSettings .button {border-radius: 4px; border-bottom: 1px solid #b0b0b0 !important; border-right: 1px solid #b0b0b0 !important; border-left: 1px solid #e0e0e0 !important; border-top: 1px solid #e0e0e0 !important;}
+.userSettings .button:first-line {text-transform: none; color: #555555; font-weight: bold; font-size: 150%;}
+.userSettings .button:active, .windowContent .button.active {color: black !important;  padding-top: 1px; height: 47px; background: #d9d9d9; border-bottom: 1px solid #e0e0e0 !important; border-right: 1px solid #e0e0e0 !important; border-left: 1px solid #b0b0b0 !important; border-top: 1px solid #b0b0b0 !important;}
+*/
