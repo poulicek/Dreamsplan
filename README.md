@@ -1,4 +1,4 @@
-[Try DEMO](https://bitit.cz/dl/dreamsplan.html)
+[Try DEMO](https://poulicek.github.io/Dreamsplan/)
 
 # Dreamsplan
 _Web task manager in a simplistic style of sticky notes with a timeline_
