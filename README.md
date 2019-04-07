@@ -1,7 +1,7 @@
+[Try DEMO](http://www.bvx.cz/poulicek/dreamsplan/)
+
 # Dreamsplan
 _Web task manager in a simplistic style of sticky notes with a timeline_
-
-[Try DEMO](http://www.bvx.cz/poulicek/dreamsplan/)
 
 
 ![Tasks Screen](https://raw.githubusercontent.com/poulicek/dreamsplan/master/res/tasks_nice.png)
