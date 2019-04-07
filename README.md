@@ -1,4 +1,4 @@
-[Try DEMO](https://poulicek.github.io/Dreamsplan/)  |  [Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=K89SHUV6EU49A&lc=CZ&item_name=Dreamsplan&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
+[Try DEMO](https://poulicek.github.io/Dreamsplan/) | [Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=K89SHUV6EU49A&lc=CZ&item_name=Dreamsplan&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
 
 # Dreamsplan
 _Web task manager in a simplistic style of sticky notes with a timeline_
