@@ -1,6 +1,9 @@
 # Dreamsplan
 _Web task manager in a simplistic style of sticky notes with a timeline_
 
+![Tasks Screen](https://raw.githubusercontent.com/poulicek/dreamsplan/master/res/tasks_nice.png)
+![Timeline Screen](https://raw.githubusercontent.com/poulicek/dreamsplan/master/res/timeline_nice.png)
+
 **Features**
 - minimalstic design, no configuration
 - easy to run / install
